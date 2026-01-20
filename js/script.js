@@ -221,6 +221,35 @@ window.addEventListener('load', () => {
 });
 
 // ===================================
+// Cookie Banner
+// ===================================
+const cookieBanner = document.getElementById('cookieBanner');
+const acceptCookiesBtn = document.getElementById('acceptCookies');
+
+// Verificar se o usuário já aceitou os cookies
+window.addEventListener('load', () => {
+    const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+
+    if (!cookiesAccepted) {
+        // Mostrar banner após 1 segundo
+        setTimeout(() => {
+            cookieBanner.classList.add('show');
+        }, 1000);
+    }
+});
+
+// Aceitar cookies
+acceptCookiesBtn.addEventListener('click', () => {
+    localStorage.setItem('cookiesAccepted', 'true');
+    cookieBanner.classList.remove('show');
+
+    // Remover o banner do DOM após a animação
+    setTimeout(() => {
+        cookieBanner.style.display = 'none';
+    }, 400);
+});
+
+// ===================================
 // Console Welcome Message
 // ===================================
 console.log('%cBronzatto Advocacia', 'font-size: 24px; font-weight: bold; color: #6B8E6B;');
