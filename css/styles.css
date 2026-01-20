@@ -530,7 +530,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .footer-logo {
@@ -539,17 +539,66 @@ img {
     gap: 12px;
 }
 
-.footer-logo span {
+.footer-branding {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer-name {
     font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.8;
+    font-weight: 300;
 }
 
 .footer-logo .logo-icon path,
 .footer-logo .logo-icon line {
     fill: var(--verde);
     stroke: var(--verde);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--branco);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(107, 142, 107, 0.3);
+}
+
+.social-link.whatsapp:hover {
+    background-color: #25D366;
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-link.linkedin:hover {
+    background-color: #0077B5;
 }
 
 .footer-text {
@@ -722,6 +771,28 @@ img {
 
     .value-item {
         text-align: center;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-name {
+        font-size: 1.1rem;
+    }
+
+    .footer-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .footer-social {
+        gap: 1rem;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
     }
 }
 
