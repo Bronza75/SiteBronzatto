@@ -409,6 +409,55 @@ img {
 }
 
 /* ===================================
+   Alexandre Bronzatto
+   =================================== */
+.alexandre-section {
+    padding: 100px 0;
+    background-color: var(--branco);
+}
+
+.alexandre-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.alexandre-image {
+    position: relative;
+}
+
+.alexandre-photo {
+    width: 100%;
+    height: 500px;
+    background-color: var(--bege);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    border: 3px solid var(--verde);
+}
+
+.alexandre-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.alexandre-title {
+    font-size: 2.25rem;
+    color: var(--verde);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.alexandre-paragraph {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--preto);
+    opacity: 0.9;
+}
+
+/* ===================================
    Contato
    =================================== */
 .contato {
@@ -758,6 +807,25 @@ img {
         height: 350px;
     }
 
+    /* Alexandre Bronzatto */
+    .alexandre-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .alexandre-photo {
+        height: 400px;
+    }
+
+    .alexandre-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .alexandre-paragraph {
+        text-align: justify;
+    }
+
     /* Contato */
     .contato-wrapper {
         grid-template-columns: 1fr;
@@ -835,6 +903,18 @@ img {
         text-align: center;
     }
 
+    .alexandre-photo {
+        height: 350px;
+    }
+
+    .alexandre-title {
+        font-size: 1.75rem;
+    }
+
+    .alexandre-paragraph {
+        font-size: 1rem;
+    }
+
     .footer-name {
         font-size: 1rem;
     }
@@ -877,6 +957,7 @@ img {
 .hero-content,
 .area-card,
 .sobre-content,
+.alexandre-content,
 .contato-wrapper {
     animation: fadeInUp 0.6s ease-out;
 }
