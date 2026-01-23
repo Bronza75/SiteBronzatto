@@ -93,8 +93,8 @@ img {
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 56px;
 }
 
 .logo-branding {
@@ -105,7 +105,7 @@ img {
 
 .logo-text {
     font-family: 'Playfair Display', serif;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 700;
     color: var(--preto);
     letter-spacing: 1px;
@@ -113,7 +113,7 @@ img {
 
 .logo-subtitle {
     font-family: 'Inter', sans-serif;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: var(--preto);
     opacity: 0.7;
     font-weight: 300;
@@ -933,7 +933,7 @@ img {
     }
 
     .logo-text {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .hero {
