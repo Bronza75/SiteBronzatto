@@ -183,10 +183,76 @@ img {
 }
 
 /* ===================================
+   Opening Banner
+   =================================== */
+.opening-banner {
+    margin-top: 80px;
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    background: linear-gradient(135deg, #8B9D83 0%, #6B8E6B 50%, #4A5F4A 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 45, 45, 0.3);
+    z-index: 1;
+}
+
+/* ===================================
+   Brand Introduction
+   =================================== */
+.brand-intro {
+    padding: 100px 0;
+    background-color: #E8E8E8;
+    text-align: center;
+}
+
+.brand-intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--preto);
+    letter-spacing: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.brand-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--verde);
+    letter-spacing: 6px;
+    margin-bottom: 2rem;
+}
+
+.brand-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--preto);
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===================================
    Hero Section
    =================================== */
 .hero {
-    margin-top: 80px;
     padding: 120px 0;
     background: linear-gradient(135deg, var(--branco) 0%, var(--bege) 100%);
     position: relative;
@@ -738,6 +804,14 @@ img {
 
 /* Tablets */
 @media (max-width: 1024px) {
+    .brand-name {
+        font-size: 3.5rem;
+    }
+
+    .brand-title {
+        font-size: 1.75rem;
+    }
+
     .hero-title {
         font-size: 2.75rem;
     }
@@ -789,6 +863,32 @@ img {
 
     .menu-toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Opening Banner */
+    .opening-banner {
+        height: 70vh;
+        min-height: 400px;
+        background-attachment: scroll;
+    }
+
+    /* Brand Introduction */
+    .brand-intro {
+        padding: 60px 0;
+    }
+
+    .brand-name {
+        font-size: 2.75rem;
+        letter-spacing: 2px;
+    }
+
+    .brand-title {
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+    }
+
+    .brand-description {
+        font-size: 1rem;
     }
 
     /* Hero */
@@ -909,6 +1009,32 @@ img {
 
     .logo-text {
         font-size: 1.4rem;
+    }
+
+    /* Opening Banner */
+    .opening-banner {
+        height: 60vh;
+        min-height: 350px;
+    }
+
+    /* Brand Introduction */
+    .brand-intro {
+        padding: 50px 0;
+    }
+
+    .brand-name {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .brand-title {
+        font-size: 1.25rem;
+        letter-spacing: 3px;
+    }
+
+    .brand-description {
+        font-size: 0.95rem;
+        padding: 0 10px;
     }
 
     .hero {
